@@ -90,9 +90,22 @@
 
 <p><strong>Installing MySQL Step 5</strong>: Description of Step 5. From the `osTicket-Installation-Files` folder, install **MySQL 5.5.62 (mysql-5.5.62-win32.msi)** using the Typical Setup. After the installation is complete, launch the Configuration Wizard. Select "Standard Configuration," and set the MySQL root username and password to whatever I just put `root` for both.</p>
 
-<p align="center">
-  <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 5 Image"/>
-</p>
+<img width="1440" alt="Screenshot 2024-10-01 at 3 20 21 AM" src="https://github.com/user-attachments/assets/f7c0ede6-48d9-48f6-90fc-0ffdc22bc60b">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 21 52 AM" src="https://github.com/user-attachments/assets/1f960e8a-5f95-4316-ab93-229d8688230f">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 26 17 AM" src="https://github.com/user-attachments/assets/241151be-c2cd-41ad-8186-bc1bf753f44b">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 28 28 AM" src="https://github.com/user-attachments/assets/2a0bdd69-ca87-470a-9ce4-0e6b4fe97315">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 30 59 AM" src="https://github.com/user-attachments/assets/a0b1e745-b61f-4775-b6cb-701c943b5545">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 31 18 AM" src="https://github.com/user-attachments/assets/929a4022-5260-46b5-ade8-f3ec6798c850">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 32 53 AM" src="https://github.com/user-attachments/assets/e54c5244-9ce2-4fae-9e0d-839068e50608">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 34 47 AM" src="https://github.com/user-attachments/assets/9b1afa5d-e3aa-427f-8de5-2896cd4405b5">
+
+
+
+
+
+
+
+
 <p><strong>Step 6</strong>: Open IIS as an administrator by searching for "IIS Manager" and selecting "Run as Administrator." Next, register PHP in IIS by navigating to "PHP Manager" and setting the path to "C:\PHP\php-cgi.exe". Once PHP is registered, reload IIS by stopping and starting the server through IIS Manager.</p>
 
 <p>Afterward, install osTicket v1.15.8. Go to the "osTicket-Installation-Files" folder on your desktop, unzip "osTicket-v1.15.8.zip," and copy the "upload" folder into "C:\inetpub\wwwroot." Rename the "upload" folder to "osTicket." Once renamed, reload IIS again by stopping and starting the server.</p>
