@@ -22,11 +22,18 @@
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+<h2>List of Prerequisites</h2>
+
+<ul>
+  <li><strong>Azure Virtual Machine:</strong> A Windows 10 VM with 4 vCPUs created in Microsoft Azure.</li>
+  <li><strong>Remote Desktop Connection (RDP):</strong> Ability to connect to the VM using Remote Desktop.</li>
+  <li><strong>Internet Information Services (IIS):</strong> IIS installed and configured on the Windows 10 VM to serve web applications.</li>
+  <li><strong>PHP and PHP Manager:</strong> PHP installed and configured with PHP Manager on IIS to support osTicket.</li>
+  <li><strong>MySQL Database:</strong> MySQL installed to store osTicket data.</li>
+  <li><strong>osTicket Installation Files:</strong> osTicket files downloaded and extracted for installation.</li>
+  
+</ul>
+
 
 <h2>Installation Steps</h2>
 
