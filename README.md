@@ -69,10 +69,17 @@
 <p><strong>Enable IIS and CGI Step 3</strong>:   To enable IIS and CGI in Windows, go to the Control Panel, click on "Programs," and then on the left-hand side, click on "Turn Windows features on or off." Check the box next to <strong>Internet Information Services (IIS)</strong> to enable it. To enable CGI, click the dropdown arrow next to <strong>World Wide Web Services</strong>, expand <strong>Application Development Features</strong>, and check the box next to <strong>CGI</strong> to enable it.</p>
 
 
-<p align="center">
-  <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 4 Image"/>
-</p>
-<p><strong>Step 4</strong>: Description of Step 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<img width="1440" alt="Screenshot 2024-10-01 at 2 49 31 AM" src="https://github.com/user-attachments/assets/53569c66-a2e2-4411-9df9-d45db24bb9f8">
+<img width="1440" alt="Screenshot 2024-10-01 at 2 50 09 AM" src="https://github.com/user-attachments/assets/81c994c2-3988-43c7-9e85-a5af83aa43d9">
+<img width="1440" alt="Screenshot 2024-10-01 at 2 50 47 AM" src="https://github.com/user-attachments/assets/4219006b-a312-4f94-9c75-631534bf758a">
+<img width="1440" alt="Screenshot 2024-10-01 at 2 53 15 AM" src="https://github.com/user-attachments/assets/696bc314-5b8a-4abd-a585-603061cacfb7">
+<img width="1440" alt="Screenshot 2024-10-01 at 2 54 19 AM" src="https://github.com/user-attachments/assets/a5c9f991-5e1b-40b1-ade3-3889f438122f">
+<img width="1440" alt="Screenshot 2024-10-01 at 2 54 23 AM" src="https://github.com/user-attachments/assets/f73428ec-8e15-41db-9db5-73c29ea32f80">
+<img width="1440" alt="Screenshot 2024-10-01 at 2 55 36 AM" src="https://github.com/user-attachments/assets/0fd3e42d-8a2a-4d6b-9305-b0d38622f5f9">
+
+
+<p><strong>Installing PHP, Rewrite Module, and VC_redist Step 4</strong>: Within the VM, navigate to the `osTicket-Installation-Files` folder on your desktop. Install **PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)** and the **Rewrite Module (rewrite_amd64_en-US.msi)** from the folder. Then, create a directory named `C:\PHP`. Next, unzip **PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip)** into the `C:\PHP` folder. After that, install the **VC_redist.x86.exe** (Microsoft Visual C++ Redistributable) to ensure that all the necessary runtime libraries are available.</p> 
 
 <p align="center">
   <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 5 Image"/>
