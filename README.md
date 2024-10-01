@@ -6,9 +6,6 @@
 
 <p>This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.</p>
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,7 +19,6 @@
 
 <h2>List of Prerequisites</h2>
 
-<h2>List of Prerequisites</h2>
 
 <ul>
   <li><strong>Azure Virtual Machine:</strong> A Windows 10 VM with 4 vCPUs created in Microsoft Azure.</li>
@@ -115,7 +111,20 @@
 <p>Next, rename the configuration file. Go to "C:\inetpub\wwwroot\osTicket\include", and rename "ost-sampleconfig.php" to "ost-config.php". Set permissions for the "ost-config.php" file by disabling inheritance. Right-click the file, select "Properties", go to the "Security" tab, click "Advanced", then select "Disable inheritance" and remove all inherited permissions. Add new permissions by assigning "Everyone" full control over the file.</p>
 
 
-<p align="center">
-  <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 5 Image"/>
-</p>
-<p><strong>Step 7</strong>: Description of Step 7. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<img width="1440" alt="Screenshot 2024-10-01 at 3 46 25 AM" src="https://github.com/user-attachments/assets/d922b822-5f05-4a56-9ea1-c00bc150181d">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 47 19 AM" src="https://github.com/user-attachments/assets/20a7be95-411b-456f-9b1a-d561a70979b4">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 48 44 AM" src="https://github.com/user-attachments/assets/a7a95f18-4dc9-403c-9f36-9e9a116d261b">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 49 23 AM" src="https://github.com/user-attachments/assets/26ebc883-a71a-480f-8a0e-b2a4b780bf43">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 50 07 AM" src="https://github.com/user-attachments/assets/0abf4fc1-d89b-485b-afd4-321f31cd458f">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 50 40 AM" src="https://github.com/user-attachments/assets/ce41ebb2-699f-4e7a-bbe9-acbd11487bfd">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 52 50 AM" src="https://github.com/user-attachments/assets/54534046-bc10-4f61-92ae-3e4d5affe598">
+
+
+
+<p><strong>Step 7</strong>: Continue setting up osTicket in your browser by clicking "Continue" on the setup page. When prompted, name your helpdesk (e.g., "Helpdesk") and set the default email address that will receive messages from customers.</p>
+
+<p>Next, from the "osTicket-Installation-Files" folder, install **HeidiSQL** by launching the installer. Once installed, open **HeidiSQL** and create a new session with the username "root" and the password "root". Connect to the session and create a new database named "osTicket".</p>
+
+<p>After the database is created, return to the osTicket setup in your browser. Enter the following MySQL details: MySQL Database: "osTicket", MySQL Username: and MySQL Password: (I put root for both). Once these details are filled in, click "Install Now!"</p>
+
+<p>Congratulations! If the installation completes successfully with no errors, you can now access your helpdesk by browsing to: <a href="http://localhost/osTicket/scp/login.php">http://localhost/osTicket/scp/login.php</a>.</p>
