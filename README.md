@@ -81,10 +81,14 @@
 
 <p><strong>Installing PHP, Rewrite Module, and VC_redist Step 4</strong>: Within the VM, navigate to the `osTicket-Installation-Files` folder on your desktop. Install **PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)** and the **Rewrite Module (rewrite_amd64_en-US.msi)** from the folder. Then, create a directory named `C:\PHP`. Next, unzip **PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip)** into the `C:\PHP` folder. After that, install the **VC_redist.x86.exe** (Microsoft Visual C++ Redistributable) to ensure that all the necessary runtime libraries are available.</p> 
 
-<p align="center">
-  <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 5 Image"/>
-</p>
-<p><strong>Step 5</strong>: Description of Step 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<img width="1440" alt="Screenshot 2024-10-01 at 3 09 08 AM" src="https://github.com/user-attachments/assets/d096f314-b664-4f76-8ab2-975c74c45d9b">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 10 54 AM" src="https://github.com/user-attachments/assets/f89575e9-52be-4e42-a760-b8f35e1110d8">
+<img width="1440" alt="Screenshot 2024-10-01 at 3 13 09 AM" src="https://github.com/user-attachments/assets/fd3b5900-70e4-47bc-a8ab-c52c8fac2847">
+
+
+
+<p><strong>Installing MySQL Step 5</strong>: Description of Step 5. From the `osTicket-Installation-Files` folder, install **MySQL 5.5.62 (mysql-5.5.62-win32.msi)** using the Typical Setup. After the installation is complete, launch the Configuration Wizard. Select "Standard Configuration," and set the MySQL root username and password to whatever I just put `root` for both. Restart your VM to apply all changes.</p>
 
 <p align="center">
   <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 5 Image"/>
