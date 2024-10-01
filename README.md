@@ -88,12 +88,19 @@
 
 
 
-<p><strong>Installing MySQL Step 5</strong>: Description of Step 5. From the `osTicket-Installation-Files` folder, install **MySQL 5.5.62 (mysql-5.5.62-win32.msi)** using the Typical Setup. After the installation is complete, launch the Configuration Wizard. Select "Standard Configuration," and set the MySQL root username and password to whatever I just put `root` for both. Restart your VM to apply all changes.</p>
+<p><strong>Installing MySQL Step 5</strong>: Description of Step 5. From the `osTicket-Installation-Files` folder, install **MySQL 5.5.62 (mysql-5.5.62-win32.msi)** using the Typical Setup. After the installation is complete, launch the Configuration Wizard. Select "Standard Configuration," and set the MySQL root username and password to whatever I just put `root` for both.</p>
 
 <p align="center">
   <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 5 Image"/>
 </p>
-<p><strong>Step 6</strong>: Description of Step 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><strong>Step 6</strong>: Open IIS as an administrator by searching for "IIS Manager" and selecting "Run as Administrator." Next, register PHP in IIS by navigating to "PHP Manager" and setting the path to "C:\PHP\php-cgi.exe". Once PHP is registered, reload IIS by stopping and starting the server through IIS Manager.</p>
+
+<p>Afterward, install osTicket v1.15.8. Go to the "osTicket-Installation-Files" folder on your desktop, unzip "osTicket-v1.15.8.zip," and copy the "upload" folder into "C:\inetpub\wwwroot." Rename the "upload" folder to "osTicket." Once renamed, reload IIS again by stopping and starting the server.</p>
+
+<p>Now, access osTicket by going to IIS Manager, navigating to "Sites" -> "Default Website" -> "osTicket", and clicking "Browse *:80" on the right-hand side. This should open osTicket in your browser. If certain PHP extensions are not enabled, return to IIS Manager, navigate to "Sites" -> "Default Website" -> "osTicket", double-click "PHP Manager", and then click "Enable or disable an extension". Enable the following extensions: "php_imap.dll", "php_intl.dll", and "php_opcache.dll". Refresh the osTicket site in your browser after enabling the extensions.</p>
+
+<p>Next, rename the configuration file. Go to "C:\inetpub\wwwroot\osTicket\include", and rename "ost-sampleconfig.php" to "ost-config.php". Set permissions for the "ost-config.php" file by disabling inheritance. Right-click the file, select "Properties", go to the "Security" tab, click "Advanced", then select "Disable inheritance" and remove all inherited permissions. Add new permissions by assigning "Everyone" full control over the file.</p>
+
 
 <p align="center">
   <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 5 Image"/>
