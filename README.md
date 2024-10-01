@@ -38,10 +38,9 @@
 <h2>Installation Steps</h2>
 
 <p align="center">
-  <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 1 Image"/>
+  <img src="https://github.com/user-attachments/assets/6c31d47e-1923-4e56-bc96-a61b28f5a84f" height="80%" width="80%" alt="Step 1 Image"/>
 </p>
-<p><strong>Step 1</strong>: Description of Step 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
+<p><strong>Step 1</strong>: Description of Step 1. Go to the Azure Portal and log in with your credentials. Once logged in, click on "Create a Resource" and select "Virtual Machine." Name your virtual machine osTicket-Lab and select the region closest to you for optimal performance. For the image, choose Windows 10 Pro, Version 22H2, and for the size, select Standard_D2s_v3 (2 vCPUs, 8 GiB memory). Under the Administrator Account section, create a username and password for the VM (e.g., labuser as the username and osTicketPassword1! as the password). Finally, click on "Review + Create," and once validation is complete, click "Create" to deploy your virtual machine. 
 <p align="center">
   <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 2 Image"/>
 </p>
