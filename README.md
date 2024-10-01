@@ -41,6 +41,7 @@
   <img src="https://github.com/user-attachments/assets/6c31d47e-1923-4e56-bc96-a61b28f5a84f" height="80%" width="80%" alt="Step 1 Image"/>
 </p>
 <p><strong>Step 1</strong>: Description of Step 1. Go to the Azure Portal and log in with your credentials. Once logged in, click on "Create a Resource" and select "Virtual Machine." Name your virtual machine osTicket-Lab and select the region closest to you for optimal performance. For the image, choose Windows 10 Pro, Version 22H2, and for the size, select Standard_D2s_v3 (2 vCPUs, 8 GiB memory). Under the Administrator Account section, create a username and password for the VM (e.g., labuser as the username and osTicketPassword1! as the password). Finally, click on "Review + Create," and once validation is complete, click "Create" to deploy your virtual machine. 
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/380a7c16-0e1f-409e-b310-4c8d1f940571" height="80%" width="80%" alt="Step 2 Image 1"/>
 </p>
@@ -52,10 +53,21 @@
 </p>
 <p><strong>Step 2</strong>: Description of Step 2. Now, you would have to wait for the VM to be deployed. Once that happens, go to the homepage and click on the VM (`osTicket-Lab`). It will display its public IP address, which we will need to connect to the VM through Remote Desktop. To connect to the VM, open the Remote Desktop app, click on "Add PC," and paste the public IP address into the "PC Name" field. Then, put `osTicket-Lab` as the friendly name and click "Add." Now, double-click the new PC and enter the username and password you created in Step 1. You should now be connected to the VM.
 
+
 <p align="center">
-  <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 3 Image"/>
+  <img src="https://github.com/user-attachments/assets/b08600d3-ebd4-4f9b-9f9a-3d9b96b3e152" height="80%" width="80%" alt="Step 3 Image 1"/>
 </p>
-<p><strong>Step 3</strong>: Description of Step 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a4bacaef-7d17-4e36-be19-14eae8ed71ff" height="80%" width="80%" alt="Step 3 Image 2"/>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/567195ac-1795-4d92-9e55-dcf8c9655ec6" height="80%" width="80%" alt="Step 3 Image 3"/>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c04864ae-49fb-40b7-899b-2f6d307881e4" height="80%" width="80%" alt="Step 3 Image 4"/>
+</p>
+<p><strong>Step 3</strong>: To enable IIS and CGI in Windows, go to the Control Panel, click on "Programs," and then on the left-hand side, click on "Turn Windows features on or off." Check the box next to <strong>Internet Information Services (IIS)</strong> to enable it. To enable CGI, click the dropdown arrow next to <strong>World Wide Web Services</strong>, expand <strong>Application Development Features</strong>, and check the box next to <strong>CGI</strong> to enable it.</p>
+
 
 <p align="center">
   <img src="https://i.imgur.com/DmEXE8R.png" height="80%" width="80%" alt="Step 4 Image"/>
