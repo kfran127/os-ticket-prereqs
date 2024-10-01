@@ -12,6 +12,11 @@
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Internet Information Services (IIS)
+- PHP 7.3.8
+- MySQL 5.5.62
+- VC_redist
+- PHP Manager for IIS
+- Rewrite Module for IIS
 
 <h2>Operating Systems Used</h2>
 
