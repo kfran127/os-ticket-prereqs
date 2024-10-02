@@ -107,7 +107,7 @@
 
 
 
-<p><strong>Step 6</strong>: Open IIS as an administrator by searching for "IIS Manager" and selecting "Run as Administrator." Next, register PHP in IIS by navigating to "PHP Manager" and setting the path to "C:\PHP\php-cgi.exe". Once PHP is registered, reload IIS by stopping and starting the server through IIS Manager.</p>
+<p><strong>Configure IIS and Install osTicket Step 6</strong>: Open IIS as an administrator by searching for "IIS Manager" and selecting "Run as Administrator." Next, register PHP in IIS by navigating to "PHP Manager" and setting the path to "C:\PHP\php-cgi.exe". Once PHP is registered, reload IIS by stopping and starting the server through IIS Manager.</p>
 
 <p>Afterward, install osTicket v1.15.8. Go to the "osTicket-Installation-Files" folder on your desktop, unzip "osTicket-v1.15.8.zip," and copy the "upload" folder into "C:\inetpub\wwwroot." Rename the "upload" folder to "osTicket." Once renamed, reload IIS again by stopping and starting the server.</p>
 
@@ -126,7 +126,7 @@
 
 
 
-<p><strong>Step 7</strong>: Continue setting up osTicket in your browser by clicking "Continue" on the setup page. When prompted, name your helpdesk (e.g., "Helpdesk") and set the default email address that will receive messages from customers.</p>
+<p><strong>Finalizing osTicket Setup and Database Configuration Step 7</strong>: Continue setting up osTicket in your browser by clicking "Continue" on the setup page. When prompted, name your helpdesk (e.g., "Helpdesk") and set the default email address that will receive messages from customers.</p>
 
 <p>Next, from the "osTicket-Installation-Files" folder, install **HeidiSQL** by launching the installer. Once installed, open **HeidiSQL** and create a new session with the username "root" and the password "root". Connect to the session and create a new database named "osTicket".</p>
 
