@@ -34,11 +34,12 @@
 
 <h2>Installation Steps</h2>
 
+<p><strong>Create a Virtual Machine on Azure Step 1</strong>: I started by logging into the Azure Portal and clicking on "Create a Resource." From there, I selected "Virtual Machine" and named my virtual machine osTicket-Lab. I chose Windows 10 Pro, Version 22H2 for the image and selected Standard_D2s_v3 (2 vCPUs, 8 GiB memory) for the size. After creating a username and password (labuser and osTicketPassword1!), I clicked "Review + Create" and deployed the virtual machine.</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6c31d47e-1923-4e56-bc96-a61b28f5a84f" height="80%" width="80%" alt="Step 1 Image"/>
 </p>
-<p><strong>Create a Virtual Machine on Azure Step 1</strong>: I started by logging into the Azure Portal and clicking on "Create a Resource." From there, I selected "Virtual Machine" and named my virtual machine osTicket-Lab. I chose Windows 10 Pro, Version 22H2 for the image and selected Standard_D2s_v3 (2 vCPUs, 8 GiB memory) for the size. After creating a username and password (labuser and osTicketPassword1!), I clicked "Review + Create" and deployed the virtual machine.</p>
 
+<p><strong>Connect to the VM Step 2</strong>: Once the VM was deployed, I went to the homepage in Azure and clicked on the VM (osTicket-Lab). This displayed its public IP address, which I used to connect to the VM via Remote Desktop. I added the IP to Remote Desktop by clicking "Add PC" and entered osTicket-Lab as the friendly name. I then connected to the VM by entering the credentials created in Step 1.</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/380a7c16-0e1f-409e-b310-4c8d1f940571" height="80%" width="80%" alt="Step 2 Image 1"/>
 </p>
@@ -48,8 +49,8 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ba1f3f6e-93f3-4040-9869-9fa001d50b78" height="80%" width="80%" alt="Step 2 Image 3"/>
 </p>
-<p><strong>Connect to the VM Step 2</strong>: Once the VM was deployed, I went to the homepage in Azure and clicked on the VM (osTicket-Lab). This displayed its public IP address, which I used to connect to the VM via Remote Desktop. I added the IP to Remote Desktop by clicking "Add PC" and entered osTicket-Lab as the friendly name. I then connected to the VM by entering the credentials created in Step 1.</p>
 
+<p><strong>Enable IIS and CGI Step 3</strong>: I enabled IIS and CGI in the Windows VM by navigating to the Control Panel, selecting "Programs," and clicking "Turn Windows features on or off." I checked the box next to Internet Information Services (IIS) and then enabled CGI under the World Wide Web Services section.</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b08600d3-ebd4-4f9b-9f9a-3d9b96b3e152" height="80%" width="80%" alt="Step 3 Image 1"/>
 </p>
@@ -62,28 +63,16 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c04864ae-49fb-40b7-899b-2f6d307881e4" height="80%" width="80%" alt="Step 3 Image 4"/>
 </p>
-<p><strong>Enable IIS and CGI Step 3</strong>: I enabled IIS and CGI in the Windows VM by navigating to the Control Panel, selecting "Programs," and clicking "Turn Windows features on or off." I checked the box next to Internet Information Services (IIS) and then enabled CGI under the World Wide Web Services section.</p>
 
+<p><strong>Installing PHP, Rewrite Module, and VC_redist Step 4</strong>: I navigated to the `osTicket-Installation-Files` folder on my desktop within the VM and installed PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) and the Rewrite Module (rewrite_amd64_en-US.msi). Next, I created a folder at `C:\PHP` and unzipped PHP 7.3.8 into it. Finally, I installed the Microsoft Visual C++ Redistributable (VC_redist.x86.exe) to ensure all necessary libraries were available.</p>
 <p align="center">
   <img width="1440" alt="Screenshot 2024-10-01 at 2 49 31 AM" src="https://github.com/user-attachments/assets/53569c66-a2e2-4411-9df9-d45db24bb9f8">
 </p>
-
 <p align="center">
   <img width="1440" alt="Screenshot 2024-10-01 at 2 50 09 AM" src="https://github.com/user-attachments/assets/81c994c2-3988-43c7-9e85-a5af83aa43d9">
 </p>
 
-<p><strong>Installing PHP, Rewrite Module, and VC_redist Step 4</strong>: I navigated to the `osTicket-Installation-Files` folder on my desktop within the VM and installed PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) and the Rewrite Module (rewrite_amd64_en-US.msi). Next, I created a folder at `C:\PHP` and unzipped PHP 7.3.8 into it. Finally, I installed the Microsoft Visual C++ Redistributable (VC_redist.x86.exe) to ensure all necessary libraries were available.</p>
-
-<p align="center">
-  <img width="1440" alt="Screenshot 2024-10-01 at 3 09 08 AM" src="https://github.com/user-attachments/assets/d096f314-b664-4f76-8ab2-975c74c45d9b">
-</p>
-
-<p align="center">
-  <img width="1440" alt="Screenshot 2024-10-01 at 3 10 54 AM" src="https://github.com/user-attachments/assets/f89575e9-52be-4e42-a760-b8f35e1110d8">
-</p>
-
 <p><strong>Installing MySQL Step 5</strong>: From the `osTicket-Installation-Files` folder, I installed MySQL 5.5.62 (mysql-5.5.62-win32.msi) using the Typical Setup. After installation, I launched the Configuration Wizard, chose "Standard Configuration," and set the MySQL root username and password to `root` for both fields.</p>
-
 <p align="center">
   <img width="1440" alt="Screenshot 2024-10-01 at 3 20 21 AM" src="https://github.com/user-attachments/assets/f7c0ede6-48d9-48f6-90fc-0ffdc22bc60b">
 </p>
@@ -91,18 +80,11 @@
   <img width="1440" alt="Screenshot 2024-10-01 at 3 21 52 AM" src="https://github.com/user-attachments/assets/1f960e8a-5f95-4316-ab93-229d8688230f">
 </p>
 
-
-
-
-
-
 <p><strong>Configure IIS and Install osTicket Step 6</strong>: I opened IIS as an administrator by searching for "IIS Manager" and selecting "Run as Administrator." I then registered PHP in IIS by navigating to "PHP Manager" and setting the path to "C:\PHP\php-cgi.exe". Once PHP was registered, I reloaded IIS by stopping and starting the server through IIS Manager.</p>
 
 <p>After that, I installed osTicket v1.15.8. I went to the "osTicket-Installation-Files" folder on my desktop, unzipped "osTicket-v1.15.8.zip," and copied the "upload" folder into "C:\inetpub\wwwroot." I renamed the "upload" folder to "osTicket." After renaming, I reloaded IIS again by stopping and starting the server.</p>
 
 <p>Next, I accessed osTicket by going to IIS Manager, navigating to "Sites" -> "Default Website" -> "osTicket", and clicking "Browse *:80" on the right-hand side. This opened osTicket in my browser. When certain PHP extensions were not enabled, I returned to IIS Manager, navigated to "Sites" -> "Default Website" -> "osTicket", double-clicked "PHP Manager", and then clicked "Enable or disable an extension." I enabled the following extensions: "php_imap.dll", "php_intl.dll", and "php_opcache.dll". After enabling these extensions, I refreshed the osTicket site in my browser.</p>
-
-<p>After that, I renamed the configuration file. I navigated to "C:\inetpub\wwwroot\osTicket\include", and renamed "ost-sampleconfig.php" to "ost-config.php". I set permissions for the "ost-config.php" file by disabling inheritance. I right-clicked the file, selected "Properties", went to the "Security" tab, clicked "Advanced", then selected "Disable inheritance" and removed all inherited permissions. I added new permissions by assigning "Everyone" full control over the file.</p>
 
 <p align="center">
   <img width="1440" alt="Screenshot 2024-10-01 at 3 46 25 AM" src="https://github.com/user-attachments/assets/d922b822-5f05-4a56-9ea1-c00bc150181d">
